@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--dark);
+  display: flex;
+  height: 80px;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__nav {
+  height: 100%;
+  display: flex;
+}
+
+.header__navLink {
+  background-color: transparent;
+  color: var(--light);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+  &:hover {
+    background-color: var(--dark-hover);
+  }
+}
