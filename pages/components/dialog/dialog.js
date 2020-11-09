@@ -74,11 +74,15 @@ export default class Dialog extends Component {
     if (this.props.size === "xlarge") { return style.dialog_xlg; }
   }
 
+  preventClick(e) {
+    e.stopPropagation();
+  }
+
   render() {
     return (
       <div onClick={() => this.close()} className={[style.dialog, this.size()].join(' ')
       } id={this.props.id} >
-        <div className={style.dialog__container}>
+        <div onClick={(e) => this.preventClick(e)} className={style.dialog__container}>
           <header className={style.dialog__header}>
             <h2 className={style.dialog__title}>{this.props.title}</h2>
             <p className={style.dialog__subtitle}>{this.props.subtitle}</p>
@@ -96,7 +100,7 @@ export default class Dialog extends Component {
             <Icon icon="x" />
           </button>
         </div>
-      </div>
+      </div >
     )
   }
 }

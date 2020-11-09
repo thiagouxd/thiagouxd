@@ -1,7 +1,7 @@
 import React from "react"
 import style from './header.module.scss'
 import Icon from 'feather-icons-react'
-import { toggleTheme } from "../../themeSettings"
+import { toggleTheme } from "../theme/themeSettings"
 
 export default function header() {
   return (

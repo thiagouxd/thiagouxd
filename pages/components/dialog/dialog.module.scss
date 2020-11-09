@@ -162,7 +162,7 @@
   position: absolute;
   right: 16px;
   top: 16px;
-  color: var(--gray-dark);
+  color: var(--gray-light);
   outline: 0;
   height: 32px;
   width: 32px;
@@ -175,5 +175,5 @@
 .dialog__buttonClose:hover,
 .dialog__buttonClose:focus {
   color: var(--gray-light);
-  background-color: var(black);
+  background-color: var(--black);
 }

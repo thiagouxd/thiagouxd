@@ -4,6 +4,7 @@ import Button from '../components/button/button'
 import style from './projetos.module.scss'
 import Dialog from '../components/dialog/dialog'
 import data from './data'
+import Tag from '../components/tag/tag'
 
 const dialog = new Dialog();
 
@@ -20,9 +21,7 @@ const Projetos = () => {
             return (
               <Button key={index} light click={() => setDialog(item)}>
                 {item.title} <br />
-                {item.tags.map((tag, index) => {
-                  return <span key={index} className="tag">{tag}</span>
-                })}
+                {tagsProjeto(item)}
               </Button>
             )
           })}
@@ -34,7 +33,7 @@ const Projetos = () => {
         id="projetos"
         content={content}
         footer={footherDialog()}
-        size="large"
+        size="medium"
       />
     </>
   )
@@ -46,10 +45,22 @@ const Projetos = () => {
   }
 
   function contentDialog(item) {
-    return item.content.map((description, index) => (<div key={index}>
-      <h4 className="title">{description.title}</h4>
-      <p className="paragraphy">{description.text}</p>
-    </div>))
+    return (
+      <>
+        {tagsProjeto(item)}
+        {item.content.map((description, index) => (<div key={index}>
+          <h4 className="title">{description.title}</h4>
+          <p className="paragraphy">{description.text}</p>
+        </div>))}
+      </>
+    )
+  }
+
+  function tagsProjeto(item) {
+    return item.tags.map((tag, index) => {
+      return <Tag key={index} className="tag">{tag}</Tag>
+    })
+
   }
 }
 
