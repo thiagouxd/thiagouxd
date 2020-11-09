@@ -1,6 +1,7 @@
 import React from "react"
 import style from '../styles/header.module.scss'
 import Icon from 'feather-icons-react'
+import { toggleTheme } from "./themeSettings"
 
 export default function header() {
   return (
@@ -32,8 +33,4 @@ const logo = () => {
       <path d="M36.2176 0.500017H41.1489V17.9341H36.2176V0.500017Z" fill={classLight} />
     </svg>
   )
-}
-
-const toggleTheme = () => {
-  document.body.classList.toggle('theme_light')
 }

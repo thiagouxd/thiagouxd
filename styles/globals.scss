@@ -26,42 +26,43 @@ button {
   box-sizing: border-box;
 }
 
+$white: #fff;
+$black: #000;
+$dark: #242424;
+$dark-hover: #353535;
+$light: #d8d8d8;
+$light-hover: #bdbdbd;
+$gray: #838383;
+$gray-hover: #6d6d6d;
+$gray-dark: #3a3a3a;
+$gray-dark-hover: #222222;
+$gray-light: #c2c2c2;
+$gray-light-hover: #8d8d8d;
+
 .theme {
-  --white: #fff;
-  --black: #000;
-
-  --dark: #161616;
-  --dark-hover: #292929;
-  --light: #c0c0c0;
-  --light-hover: #b3b3b3;
-  --gray: #858585;
-  --gray-hover: #6d6d6d;
-  --gray-dark: #313131;
-  --gray-dark-hover: #292929;
-  --gray-light: #acacac;
-  --gray-light-hover: #9b9b9b;
-
-  --white-inverse: #000;
-  --black-inverse: #000;
-  --dark-inverse-hover: #c3c3c3;
-  --dark-inverse: #d9d9d9;
-  --light-inverse-hover: #292929;
-  --light-inverse: #161616;
-  --gray-dark-inverse-hover: #b1b1b1;
-  --gray-dark-inverse: #b1b1b1;
-  --gray-light-inverse-hover: #3d3d3d;
-  --gray-light-inverse: #3d3d3d;
+  --white: #{$white};
+  --black: #{$black};
+  --dark: #{$dark};
+  --dark-hover: #{$dark-hover};
+  --light: #{$light};
+  --light-hover: #{$light-hover};
+  --gray: #{$gray};
+  --gray-hover: #{$gray-hover};
+  --gray-dark: #{$gray-dark};
+  --gray-dark-hover: #{$gray-dark-hover};
+  --gray-light: #{$gray-light};
+  --gray-light-hover: #{$gray-light-hover};
 }
 
 .theme_light {
-  --dark: var(--dark-inverse);
-  --dark-hover: var(--dark-inverse-hover);
-  --light: var(--light-inverse);
-  --light-hover: var(--light-inverse-hover);
-  --white: var(--white-inverse);
-  --black: var(--black-inverse);
-  --gray-dark: var(--gray-dark-inverse);
-  --gray-dark-hover: var(--gray-dark-inverse-hover);
-  --gray-light: var(--gray-light-inverse);
-  --gray-light-hover: var(--gray-light-inverse-hover);
+  --black: #{$white};
+  --white: #{$black};
+  --light: #{$dark};
+  --light-hover: #{$dark-hover};
+  --dark: #{$light};
+  --dark-hover: #{$light-hover};
+  --gray-dark: #{$gray-light};
+  --gray-dark-hover: #{$gray-light-hover};
+  --gray-light: #{$gray-dark};
+  --gray-light-hover: #{$gray-dark-hover};
 }
