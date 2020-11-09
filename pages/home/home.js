@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../styles/home.module.scss'
-import Button from './button'
+import style from './home.module.scss'
+import Button from '../components/button/button'
 import Icon from 'feather-icons-react'
 
 export default function SectionInitial() {

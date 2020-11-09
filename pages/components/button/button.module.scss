@@ -18,7 +18,8 @@
 .button_light {
   color: var(--dark);
   background-color: var(--light);
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--dark);
     background-color: var(--light-hover);
   }

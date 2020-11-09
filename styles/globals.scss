@@ -38,6 +38,8 @@ $gray-dark: #3a3a3a;
 $gray-dark-hover: #222222;
 $gray-light: #c2c2c2;
 $gray-light-hover: #8d8d8d;
+$gray-light-transparent: rgba($gray-light, 0.6);
+$gray-dark-transparent: rgba($gray-dark, 0.6);
 
 .theme {
   --white: #{$white};
@@ -52,6 +54,8 @@ $gray-light-hover: #8d8d8d;
   --gray-dark-hover: #{$gray-dark-hover};
   --gray-light: #{$gray-light};
   --gray-light-hover: #{$gray-light-hover};
+  --gray-dark-transparent: #{$gray-dark-transparent};
+  --gray-light-transparent: #{$gray-light-transparent};
 }
 
 .theme_light {
@@ -65,4 +69,6 @@ $gray-light-hover: #8d8d8d;
   --gray-dark-hover: #{$gray-light-hover};
   --gray-light: #{$gray-dark};
   --gray-light-hover: #{$gray-dark-hover};
+  --gray-dark-transparent: #{$gray-light-transparent};
+  --gray-light-transparent: #{$gray-dark-transparent};
 }
