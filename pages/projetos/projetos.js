@@ -14,7 +14,7 @@ const Projetos = () => {
 
   return (
     <>
-      <section className={style.projetos}>
+      <section id="projetos" className={style.projetos}>
         <Title md>PROJETOS</Title>
         <div className={style.projetos__containerButtons}>
           {data.map((item, index) => {
@@ -30,7 +30,7 @@ const Projetos = () => {
 
       <Dialog
         title={titleDialog}
-        id="projetos"
+        id="projeto"
         content={content}
         footer={footherDialog()}
         size="medium"
@@ -41,7 +41,7 @@ const Projetos = () => {
   function setDialog(item) {
     setTitle(item.title)
     setContent(contentDialog(item));
-    dialog.show("projetos")
+    dialog.show("projeto")
   }
 
   function contentDialog(item) {

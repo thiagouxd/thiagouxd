@@ -1,0 +1,18 @@
+export default [
+  "DESIGN GRÁFICO",
+  "HTML",
+  "CSS(SCSS)",
+  "JAVA SCRIPT",
+  "PROTOTIPAÇÃO",
+  "DESCOBERTA",
+  "REACT JS",
+  "NEXT JS",
+  "AURELIA JS",
+  "VUE JS",
+  "GIT",
+  "FIGMA",
+  "PHOTOSHOP",
+  "ILLUSTRATOR",
+  "IN DESIGN",
+  "VISUAL STUDIO CODE",
+]

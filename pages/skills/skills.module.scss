@@ -1,0 +1,25 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.skills__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  height: 180px;
+  width: 720px;
+
+  li {
+    margin-bottom: 8px;
+    width: 240px;
+    text-align: center;
+  }
+}

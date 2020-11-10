@@ -1,9 +1,13 @@
-import React from "react"
+import React, { useContext } from "react"
 import style from './header.module.scss'
 import Icon from 'feather-icons-react'
-import { toggleTheme } from "../theme/themeSettings"
+import { setTheme, toggleTheme } from "../theme/themeSettings"
+import { ThemeContext } from "../theme/themeContext"
 
 export default function header() {
+  const themeContext = useContext(ThemeContext)
+
+  setTheme(themeContext)
   return (
     <header className={style.header}>
       {logo()}
@@ -11,8 +15,8 @@ export default function header() {
         <a href="#projetos" className={style.header__navLink}>Projetos</a>
         <a href="#skills" className={style.header__navLink}>Skills</a>
         <a href="#curriculum" className={style.header__navLink}>Curriculum</a>
-        <button onClick={() => toggleTheme()} className={style.header__navLink}>
-          <Icon icon="sun" />
+        <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
+          {!themeContext.themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}
         </button>
       </nav>
     </header>
