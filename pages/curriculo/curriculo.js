@@ -1,31 +1,40 @@
 import React from 'react'
 import Title from '../components/title/title'
 import style from './curriculo.module.scss'
+import Paragraphy from '../components/paragraphy/paragraphy'
 
 const Curriculo = () => {
   return (
-    <section className={style.curriculo}>
+    <section id="curriculo" className={style.curriculo}>
       <Title md>CURRÍCULO</Title>
-      <p>
-        Thiago Menezes de Olivera, 27 anos <br />
+
+      <Paragraphy lg>
+        <strong>Thiago Menezes de Olivera, 27 anos</strong>
+      </Paragraphy>
+
+      <Paragraphy>
         UI Designer, UX Design, Front-ender e Publicitário.
-      </p>
+      </Paragraphy>
 
-      <Title>FORMAÇÃO</Title>
-      <p>
+      <Title sm>FORMAÇÃO</Title>
+
+      <Paragraphy>
         Bacharel em Publicidade e Propaganda, 2015 - Uniderp
-      </p>
+      </Paragraphy>
 
-      <Title>EXPERIÊNCIA PROFISSIONAL</Title>
-      <p>
+      <Title sm>EXPERIÊNCIA PROFISSIONAL</Title>
+
+      <Paragraphy>
         Digix - UX/UI Designer <br /> 2017 - atualmente
-      </p>
-      <p>
+      </Paragraphy>
+
+      <Paragraphy>
         Designer Gráfico - BTB Agência <br /> 2015 - 2017
-      </p>
-      <p>
+      </Paragraphy>
+
+      <Paragraphy>
         Designer Gráfico - Criatrix  <br /> 2013 - 2015
-      </p>
+      </Paragraphy>
     </section>
   )
 }

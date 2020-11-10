@@ -5,6 +5,7 @@ import React from 'react'
 import ThemeStorage from './themeContext'
 import Skills from './skills/skills'
 import Curriculo from './curriculo/curriculo'
+import Footer from './components/footer/footer'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Projetos />
       <Skills />
       <Curriculo />
+      <Footer />
     </>
   )
 }

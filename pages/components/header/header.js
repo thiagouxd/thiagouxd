@@ -14,7 +14,7 @@ export default function header() {
       <nav className={style.header__nav}>
         <a href="#projetos" className={style.header__navLink}>Projetos</a>
         <a href="#skills" className={style.header__navLink}>Skills</a>
-        <a href="#curriculum" className={style.header__navLink}>Curriculum</a>
+        <a href="#curriculo" className={style.header__navLink}>Currículo</a>
       </nav>
       <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
         {!themeContext.themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}

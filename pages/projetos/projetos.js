@@ -5,6 +5,7 @@ import style from './projetos.module.scss'
 import Dialog from '../components/dialog/dialog'
 import data from '../../no-components/projetosData'
 import Tag from '../components/tag/tag'
+import Paragraphy from '../components/paragraphy/paragraphy'
 
 const dialog = new Dialog();
 
@@ -49,8 +50,8 @@ const Projetos = () => {
       <>
         {tagsProjeto(item)}
         {item.content.map((description, index) => (<div key={index}>
-          <h4 className="title">{description.title}</h4>
-          <p className="paragraphy">{description.text}</p>
+          <Title sm>{description.title}</Title>
+          <Paragraphy>{description.text}</Paragraphy>
         </div>))}
       </>
     )

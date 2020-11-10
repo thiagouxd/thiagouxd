@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 24px 16px;
+  p {
+    margin: 0;
+  }
+  svg {
+    margin-right: 8px !important;
+    color: #ff0055;
+  }
+}

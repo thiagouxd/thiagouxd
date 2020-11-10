@@ -5,7 +5,7 @@ import data from '../../no-components/skillsData'
 
 export default function Skills() {
   return (
-    <section className={style.skills}>
+    <section id="skills" className={style.skills}>
       <Title md>SKILLS</Title>
 
       <ul className={style.skills__list}>

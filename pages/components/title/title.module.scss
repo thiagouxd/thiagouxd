@@ -1,6 +1,13 @@
 .title {
   font-weight: 800;
   color: var(--light);
+  margin-top: 24px;
+}
+
+.title_sm {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .title_md {
