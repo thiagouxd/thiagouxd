@@ -4,12 +4,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Montserrat, sans-serif;
-  background: radial-gradient(
-    28.68% 57.26% at 35.4% 47.82%,
-    var(--gray-dark) 0%,
-    var(--dark) 100%
-  );
-  color: var(--light);
 }
 
 a {
@@ -59,6 +53,13 @@ $gray-dark-transparent: rgba($gray-dark, 0.6);
   --gray-light-hover: #{$gray-light-hover};
   --gray-dark-transparent: #{$gray-dark-transparent};
   --gray-light-transparent: #{$gray-light-transparent};
+
+  background: radial-gradient(
+    28.68% 57.26% at 35.4% 47.82%,
+    var(--gray-dark) 0%,
+    var(--dark) 100%
+  );
+  color: var(--light);
 }
 
 .theme_light {

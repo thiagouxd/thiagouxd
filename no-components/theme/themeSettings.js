@@ -24,11 +24,11 @@ export const toggleTheme = (setThemeDark) => {
 const changeThemeLight = (setThemeDark) => {
   localStorage.setItem('theme', 'light')
   setThemeDark(false)
-  document.body.classList.add('theme_light');
+  document.querySelector('.theme').classList.add('theme_light');
 }
 
 const changeThemeDark = (setThemeDark) => {
   localStorage.setItem('theme', 'dark')
   setThemeDark(true)
-  document.body.classList.remove('theme_light');
+  document.querySelector('.theme').classList.remove('theme_light');
 }
