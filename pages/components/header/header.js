@@ -15,10 +15,10 @@ export default function header() {
         <a href="#projetos" className={style.header__navLink}>Projetos</a>
         <a href="#skills" className={style.header__navLink}>Skills</a>
         <a href="#curriculum" className={style.header__navLink}>Curriculum</a>
-        <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
-          {!themeContext.themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}
-        </button>
       </nav>
+      <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
+        {!themeContext.themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}
+      </button>
     </header>
   )
 }
