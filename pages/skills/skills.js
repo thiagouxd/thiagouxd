@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './skills.module.scss'
 import Title from '../components/title/title'
-import data from './data'
+import data from '../../no-components/skillsData'
 
 export default function Skills() {
   return (

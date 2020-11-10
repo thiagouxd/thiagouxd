@@ -9,3 +9,11 @@
   letter-spacing: 2px;
   font-weight: 600;
 }
+
+.tag:first-child {
+  margin-left: 0;
+}
+
+.tag:last-child {
+  margin-right: 0;
+}

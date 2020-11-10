@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import style from './header.module.scss'
 import Icon from 'feather-icons-react'
-import { setTheme, toggleTheme } from "../theme/themeSettings"
-import { ThemeContext } from "../theme/themeContext"
+import { setTheme, toggleTheme } from "../../../no-components/theme/themeSettings"
+import { ThemeContext } from "../../themeContext"
 
 export default function header() {
   const themeContext = useContext(ThemeContext)

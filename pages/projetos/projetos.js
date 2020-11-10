@@ -3,7 +3,7 @@ import Title from '../components/title/title'
 import Button from '../components/button/button'
 import style from './projetos.module.scss'
 import Dialog from '../components/dialog/dialog'
-import data from './data'
+import data from '../../no-components/projetosData'
 import Tag from '../components/tag/tag'
 
 const dialog = new Dialog();

@@ -2,8 +2,9 @@ import Header from './components/header/header'
 import SectionInitial from './home/home'
 import Projetos from './projetos/projetos'
 import React from 'react'
-import { ThemeStorage } from './components/theme/themeContext'
+import ThemeStorage from './themeContext'
 import Skills from './skills/skills'
+import Curriculo from './curriculo/curriculo'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SectionInitial />
       <Projetos />
       <Skills />
+      <Curriculo />
     </>
   )
 }
