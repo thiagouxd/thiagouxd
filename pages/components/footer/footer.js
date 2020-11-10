@@ -5,8 +5,8 @@ import style from './footer.module.scss'
 
 const Footer = () => (
   <footer className={style.footer}>
-    <Icon icon='heart' />
-    <Paragraphy>
+    <Paragraphy sm>
+      <Icon icon='heart' size="16" />
       Feito por mim com carinho - Figma, criatividade, NextJS e Vercel - {anoAtual()}.
     </Paragraphy>
   </footer>
