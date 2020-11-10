@@ -1,12 +1,12 @@
-import React, { useContext } from "react"
+import React, { useEffect, useState } from "react"
 import style from './header.module.scss'
 import Icon from 'feather-icons-react'
-import { setTheme, toggleTheme, ThemeContext } from "../../../no-components/theme/themeSettings"
+import { setTheme, toggleTheme } from "../../../no-components/theme/themeSettings"
 
 export default function header() {
-  const themeContext = useContext(ThemeContext)
+  const [themeDark, setThemeDark] = useState(true)
 
-  setTheme(themeContext)
+  setTheme(setThemeDark)
   return (
     <header className={style.header}>
       {logo()}
@@ -15,8 +15,8 @@ export default function header() {
         <a href="#skills" className={style.header__navLink}>Skills</a>
         <a href="#curriculo" className={style.header__navLink}>Currículo</a>
       </nav>
-      <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
-        <Icon icon='moon' />
+      <button onClick={() => toggleTheme(setThemeDark)} className={style.header__navLink}>
+        {themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}
       </button>
     </header>
   )

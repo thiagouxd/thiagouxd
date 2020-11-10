@@ -1,41 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
-export const setTheme = (themeDark) => {
+export const setTheme = (setThemeDark) => {
   useEffect(() => {
     const theme = localStorage.getItem('theme')
     const themeLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches
 
     if (theme === 'light' || !theme && themeLight) {
-      changeThemeLight(themeDark)
+      changeThemeLight(setThemeDark);
     }
   }, [])
 }
 
-export const toggleTheme = (themeDark) => {
+export const toggleTheme = (setThemeDark) => {
   const theme = localStorage.getItem('theme');
 
   if (!theme || theme === 'dark') {
-    changeThemeLight(themeDark);
+    changeThemeLight(setThemeDark);
   } else if (theme === 'light') {
-    changeThemeDark(themeDark)
+    changeThemeDark(setThemeDark)
   }
 }
 
-const changeThemeLight = (themeDark) => {
-  themeDark.setThemeDark(false);
+const changeThemeLight = (setThemeDark) => {
   localStorage.setItem('theme', 'light')
+  setThemeDark(false)
   document.body.classList.add('theme_light');
 }
 
-const changeThemeDark = (themeDark) => {
-  themeDark.setThemeDark(true);
+const changeThemeDark = (setThemeDark) => {
   localStorage.setItem('theme', 'dark')
+  setThemeDark(true)
   document.body.classList.remove('theme_light');
-}
-
-export const ThemeContext = React.createContext()
-
-export const ThemeStorage = ({ children }) => {
-  const [themeDark, setThemeDark] = useState(true)
-  return <ThemeContext.Provider value={{ themeDark, setThemeDark }}>{children}</ThemeContext.Provider>
 }
