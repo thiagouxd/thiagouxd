@@ -1,8 +1,7 @@
 import React, { useContext } from "react"
 import style from './header.module.scss'
 import Icon from 'feather-icons-react'
-import { setTheme, toggleTheme } from "../../../no-components/theme/themeSettings"
-import { ThemeContext } from "../../../no-components/theme/themeContext"
+import { setTheme, toggleTheme, ThemeContext } from "../../../no-components/theme/themeSettings"
 
 export default function header() {
   const themeContext = useContext(ThemeContext)
@@ -17,7 +16,7 @@ export default function header() {
         <a href="#curriculo" className={style.header__navLink}>Currículo</a>
       </nav>
       <button onClick={() => toggleTheme(themeContext)} className={style.header__navLink}>
-        {!themeContext.themeDark ? <Icon icon='moon' /> : <Icon icon='sun' />}
+        <Icon icon='moon' />
       </button>
     </header>
   )
