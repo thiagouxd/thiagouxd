@@ -9,7 +9,6 @@ let allElements;
 
 export default class Dialog extends Component {
   show(id) {
-    debugger
     lastElement = document.activeElement;
     idOpened = id;
     open = true;

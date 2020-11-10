@@ -75,3 +75,7 @@ $gray-dark-transparent: rgba($gray-dark, 0.6);
   --gray-dark-transparent: #{$gray-light-transparent};
   --gray-light-transparent: #{$gray-dark-transparent};
 }
+
+.paragraphy {
+  line-height: 24px;
+}

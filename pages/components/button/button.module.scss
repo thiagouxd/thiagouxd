@@ -18,6 +18,10 @@
   &:active {
     transform: translate(0, 2px);
   }
+  @media screen and (max-width: 680px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
 
 .button_light {

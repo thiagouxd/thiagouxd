@@ -6,9 +6,9 @@
 }
 
 .home__container {
-  height: 800px;
+  height: 780px;
   width: 100%;
-  height: calc(100vh - 184px);
+  height: calc(100vh - 196px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +22,22 @@
   text-transform: uppercase;
   font-weight: 800;
   margin: 0;
+  position: relative;
+  animation: titleAnimation cubic-bezier(0.9, 0.46, 0.68, 0.74) 2s;
   span {
     color: var(--gray-light);
+  }
+  @media screen and(max-width: 680px) {
+    font-size: 80px;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    top: 24px;
+  }
+  100% {
+    top: 0;
   }
 }
 
