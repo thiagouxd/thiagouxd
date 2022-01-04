@@ -9,9 +9,9 @@ const Sobre = () => {
       <section id="sobre" className={style.container}>
         <Title md>SOBRE</Title>
         <Paragraphy lg>
-          Tenho 5 anos de experiência no mercado de TI. Hoje, meu principal foco
-          é atender o usuário da forma mais simples possível e dar a melhor
-          experiência para ele.
+          Tenho 5 anos de experiência no mercado de TI. <br />
+          Meu principal foco é atender o usuário da forma mais simples possível
+          e dar a melhor experiência para ele.
         </Paragraphy>
 
         <Paragraphy lg>
