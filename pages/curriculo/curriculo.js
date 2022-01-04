@@ -1,7 +1,7 @@
-import React from 'react'
-import Title from '../components/title/title'
-import style from './curriculo.module.scss'
-import Paragraphy from '../components/paragraphy/paragraphy'
+import React from "react";
+import Title from "../components/title/title";
+import style from "./curriculo.module.scss";
+import Paragraphy from "../components/paragraphy/paragraphy";
 
 const Curriculo = () => {
   return (
@@ -9,12 +9,10 @@ const Curriculo = () => {
       <Title md>CURRÍCULO</Title>
 
       <Paragraphy lg>
-        <strong>Thiago Menezes de Olivera, 27 anos</strong>
+        <strong>Thiago Menezes de Olivera, 28 anos</strong>
       </Paragraphy>
 
-      <Paragraphy>
-        UI Designer, UX Design, Front-ender e Publicitário.
-      </Paragraphy>
+      <Paragraphy>UI Designer, UX Design e Front-ender.</Paragraphy>
 
       <Title sm>FORMAÇÃO</Title>
 
@@ -25,7 +23,11 @@ const Curriculo = () => {
       <Title sm>EXPERIÊNCIA PROFISSIONAL</Title>
 
       <Paragraphy>
-        Digix - UX/UI Designer <br /> 2017 - atualmente
+        GrupoSBF - Product Designer / Frontender <br /> 2021 - Atualmente
+      </Paragraphy>
+
+      <Paragraphy>
+        Digix - UX/UI Designer / Frontender <br /> 2017 - 2021
       </Paragraphy>
 
       <Paragraphy>
@@ -33,10 +35,10 @@ const Curriculo = () => {
       </Paragraphy>
 
       <Paragraphy>
-        Designer Gráfico - Criatrix  <br /> 2013 - 2015
+        Designer Gráfico - Criatrix <br /> 2013 - 2015
       </Paragraphy>
     </section>
-  )
-}
+  );
+};
 
 export default Curriculo;

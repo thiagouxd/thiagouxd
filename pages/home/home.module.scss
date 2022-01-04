@@ -28,7 +28,7 @@
     color: var(--gray-light);
   }
   @media screen and(max-width: 680px) {
-    font-size: 80px;
+    font-size: 64px;
   }
 }
 
@@ -48,9 +48,18 @@
   color: var(--gray-light);
   margin: 0;
   margin-bottom: 16px;
+  @media screen and(max-width: 680px) {
+    font-size: 11px;
+    text-align: center;
+    line-height: 24px;
+  }
 }
 
 .home .button {
   background-color: transparent;
   letter-spacing: 4px;
+}
+
+.descriptionBar {
+  color: var(--gray-dark)
 }

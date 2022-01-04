@@ -1,7 +1,7 @@
-import React from 'react'
-import style from './skills.module.scss'
-import Title from '../components/title/title'
-import data from '../../no-components/skillsData'
+import React from "react";
+import style from "./style.module.scss";
+import Title from "../components/title/title";
+import data from "../../no-components/skillsData";
 
 export default function Skills() {
   return (
@@ -10,9 +10,9 @@ export default function Skills() {
 
       <ul className={style.skills__list}>
         {data.map((item, index) => {
-          return <li key={index}>{item}</li>
+          return <li key={index}>{item}</li>;
         })}
       </ul>
     </section>
-  )
+  );
 }
